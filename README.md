@@ -1,1 +1,2 @@
 # AdyGames
+1. TicTacToe -> A simple TicTacToe game made in OOP in Python, the basic idea was that the player can easily play, so it is not needed to chose the MARK in the game again and again, it took me some time but I think it is better than play the game by choosing the mark over and over.First it was made only with funcitons and then with classes to get more exp. in OOP.It is not a big project I know but I enjoyed it and if you would like to play with it then here you go :).
