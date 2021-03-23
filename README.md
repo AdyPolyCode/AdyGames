@@ -5,3 +5,5 @@ Games without graphical interface
 2. PaperRockScissor -> Simple game made in a few row of code, not a big deal but it was a good one to learn how to play against the computer and use loop.
 3. StoryGame -> A game build based on a Tree data structure, the player has to chose the path he\her wants to ''walk'', I did not write a long story at this one, I kept it short.
 if you want to try it here you go :).
+4. Survalien -> My first game with graphical interface. I made it with pygame and other helper module. This game is about to survive the meteor falls in the space you as an alien.
+You can cotrol the alien with the KEY ARROWS and it has a speed ability too, press SPACE to activate. Feel free to play around with it.
