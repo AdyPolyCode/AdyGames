@@ -7,3 +7,4 @@ Games without graphical interface
 if you want to try it here you go :).
 4. Survalien -> My first game with graphical interface. I made it with pygame and other helper module. This game is about to survive the meteor falls in the space you as an alien.
 You can control the alien with the KEY ARROWS and it has a speed ability too, press SPACE to activate. Feel free to play around with it.
+5. TowerOfHanoi -> This one is made of a STACK STRUCTURE and some USER input and FUNCTIONS as well. Play with it if you want to.
