@@ -107,11 +107,44 @@ class Field {
   }
 }
 
-const myField = new Field([
-  ['*', '░', 'O', '░', '░'],
-  ['░', 'O', '░', 'O', '░'],
-  ['░', '░', '░', '░', '^'],
-  ['░', '░', '░', '░', '░']
-]);
+function generateMap(row, col){
+  const start = '*';
+  const finish = '^';
+  const symbolOne = '#';
+  const symbolTwo = 'O';
 
-myField.play()
+  let matrix = [];
+  for (let i=0;i<row;i++){
+    matrix.push([]);
+  };
+
+  matrix.map((list)=>{
+    const probOne = 6;
+    const probTwo = 4;
+
+    for (let i=0;i<col;i++){
+      const chanceOne = Math.floor(Math.random() * probOne);
+      const chanceTwo = Math.floor(Math.random() * probTwo);
+      if (chanceOne > chanceTwo){
+        list.push(symbolOne);
+      }else if (chanceOne < chanceTwo){
+        list.push(symbolTwo);
+      }else{
+        list.push(symbolOne);
+      };
+    };
+    return list;
+  });
+  matrix[0][0] = start;
+  matrix[row - 1][col - 1] = finish;
+
+  return matrix;
+};
+
+
+const newMap = generateMap(6, 6);
+
+
+const myField = new Field(newMap);
+
+myField.play();
